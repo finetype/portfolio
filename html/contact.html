@@ -7,7 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
     <title>Kyle Baker : contact</title>
 
@@ -16,6 +17,9 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/cover.css" rel="stylesheet">
+
+    <!--other styles-->
+    <link href="../css/general.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -38,7 +42,7 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand"></h3>
               <nav>
                 <ul class="nav masthead-nav">
                   <li><a href="../cover.html">Home</a></li>
@@ -51,19 +55,21 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">w h e r e _ a m _ i ?</h1>
-            <!--<p class="lead">nothing here.</p>-->
-            <a  href="https://www.linkedin.com/in/kylebakerjs">
-              <img src="../img/linkedin1.png" height="128" width="128"/>
-            </a>
-            <a  href="https://github.com/finetype">
-              <img src="../img/github1.png" height="128" width="128"/>
-            </a>
+            <h1 class="cover-heading"></h1>
+            <!-- <p class="lead">nothing here.</p> -->
+            <div class="launchers">
+              <a  href="https://www.linkedin.com/in/kylebakerjs">
+                <img src="../img/linkedin1.png" height="128" width="128"/>
+              </a>
+              <a  href="https://github.com/finetype">
+                <img src="../img/github1.png" height="128" width="128"/>
+              </a>
+            </div>
           </div>
 
           <div class="mastfoot">
             <div class="inner">
-              <img src="../img/kblogo2.png" height="65.5px" width="100px">
+              <!-- <img src="../img/kblogo2.png" height="65.5px" width="100px"> -->
             </div>
           </div>
 
@@ -77,8 +83,30 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- typed.js fun stuff -->
+    <script src="../js/typed.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.launchers').delay(4000).animate({'opacity': '1'}, 4000)
+      // var $launchers = $('<a href="https://www.linkedin.com/in/kylebakerjs"> <img src="../img/linkedin1.png" height="128" width="128"/> </a> <a  href="https://github.com/finetype"> <img src="../img/github1.png" height="128" width="128"/> </a>')
+      
+      // // $launchers
+      // $( "<p>Test</p>" )
+      // .appendTo(".inner cover").hide().fadeIn('slow');
+
+      $(function(){
+          $(".cover-heading").typed({
+            strings: ["w h e r e^750 _ a m _ ^200i ?"],
+            typeSpeed: 50
+          });
+      });
+
+    });
+    
+    </script>
   </body>
 </html>
