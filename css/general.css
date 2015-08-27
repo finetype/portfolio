@@ -1,6 +1,11 @@
 
+
 #jumbo {
   padding-top:100px;
+  -webkit-box-shadow: 10px 10px 100px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 10px 100px rgba(0,0,0,0);
+  -o-box-shadow: 0 10px 100px rgba(0,0,0,0);
+  box-shadow: 0 10 100px rgba(0,0,0,.5);
 }
 
 /* typed specific cursor things that allow a blinky cursor (not currently using this ) */
@@ -62,8 +67,8 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-  background-color: #333;
+/*   height: 100%; */  
+    background-color: #333;
 }
 body {
   color: #fff;
@@ -75,10 +80,11 @@ body {
 .site-wrapper {
   display: table;
   width: 100%;
-  height: 100%; /* For at least Firefox */
+  height: 100%;  /* For at least Firefox */ 
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  /*used to have shadows here*/
+/*    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
 }
 .site-wrapper-inner {
   display: table-cell;
