@@ -1,0 +1,10 @@
+to-do
+
+info page about makersquare/hackreactor
+transform into single page app
+open links in new tabs?
+recommended reading page
+rename the sections?
+rewrite in mithril?
+
+blog...bleh

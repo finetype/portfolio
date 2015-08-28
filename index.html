@@ -36,12 +36,11 @@
 
     <img id="jumbo" class="img-responsive" src="img/cafe-crop-overlay.jpg"/>
     <div class="site-wrapper">
-
       <!-- <div class="site-wrapper-inner"> -->
-
         <div class="cover-container">
-
           <div class="masthead clearfix">
+            <a href="http://www.hackreactor.com"><img target="_tab" id="hr" class="masthead-brand" src="./img/hr2.png" width="53" height="49.5"/></a>
+            <a href="http://www.makersquare.com"><img target="_tab" class="masthead-brand" src="./img/mks-icon.png" width="53" height="49.5"/></a>
             <div class="inner">
                <!-- <img class="masthead-brand" src="img/kblogo2.png" height="49.2px" width="75px"/> -->
               <!-- <img class="masthead-brand" height="50" width="118" src="img/HR-MKS-logos-small-clear.png"/> -->
@@ -91,6 +90,14 @@
     <script src="js/typed.js"></script>
     <script>
       $(document).ready(function(){
+
+        $(".masthead-brand").delay(1000).animate({'opacity': '1'}, 2500)
+        $(function(){
+            $(".cover-heading").typed({
+              strings: ['w h o _ a m _ i^150 ?'],
+              typeSpeed: 20
+            });
+        });
         $(function(){
             $(".cover-heading").typed({
               strings: ["k y l e^1000 _ b a k e r"],
