@@ -82,7 +82,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
@@ -90,25 +90,25 @@
     <!-- typed.js fun stuff -->
     <script src="js/typed.js"></script>
     <script>
-    $(document).ready(function(){
-      $(function(){
-          $(".cover-heading").typed({
-            strings: ["k y l e^1000 _ b a k e r"],
-            typeSpeed: 75,
-            startDelay: 2000
-          });
-      });
-      $(function(){
-        $(".lead").typed({
-          strings: ["javascript coder",'judoka','web developer','guitarist','programmer','climber','logician','jiu-jitsero','cellist','esperantist','node.js developer','TiNeSiFe','polyglot','linux user','austinite','writer','pianist','problem solver','bicyclist','motorcyclist','full stack developer', 'go player'],
-          typeSpeed: 150,
-          startDelay: 5500,
-          loop:true,
-          shuffle:true
+      $(document).ready(function(){
+        $(function(){
+            $(".cover-heading").typed({
+              strings: ["k y l e^1000 _ b a k e r"],
+              typeSpeed: 45,
+              startDelay: 1100
+            });
         });
+        $(function(){
+          $(".lead").typed({
+            strings: ["javascript coder",'judoka','web developer','guitarist','programmer','climber','logician','jiu-jitsero','cellist','esperantist','node.js developer','TiNeSiFe','polyglot','linux user','austinite','writer','pianist','problem solver','bicyclist','motorcyclist','full stack developer', 'go player'],
+            typeSpeed: 75,
+            startDelay: 4300,
+            loop:true,
+            shuffle:true
+          });
+        });
+        $('#jumbo').animate({'opacity': '1'}, 2500)
       });
-      $('#jumbo').animate({'opacity': '1'}, 4000)
-    });
     </script>         
   </body>
 </html>

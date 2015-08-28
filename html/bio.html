@@ -42,7 +42,7 @@
                 <ul class="nav masthead-nav">
                   <li><a href="../index.html">Home</a></li>
                   <li><a href="contact.html">Contact</a></li>
-                  <li class="active"><a href="bio.html">Bio</a></li>
+                  <li class="active"><a href="#">Bio</a></li>
                   <li><a href="http://www.ihazcodenow.blogspot.com">Blog</a></li>
                 </ul>
               </nav>
@@ -52,6 +52,7 @@
           <div class="inner cover">
             <h1 class="cover-heading">w h o _ a m _ i</h1>
             <p class="lead"></p>
+            <p class="follow"></p>            
           </div>
 
           <div class="mastfoot">
@@ -67,9 +68,32 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- typed.js fun stuff -->
+    <script src="../js/typed.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(function(){
+            $(".lead").typed({
+              strings: ['makquersquare/hackreactor grad.<br /> ^500 javascript lover. <br /> ^500 some things that excite me are:<br />'],
+              typeSpeed: 10,
+              startDelay: 1100
+            });
+        });
+        $(function(){
+          $(".follow").typed({
+            strings: ['efficiency and optimization','simple, elegant frameworks (like mithril)','distraction free mode in sublime text','hotkeys for everything','hard logic problems','architecting large projects','intelligent, curious, kind people','things explained clearly','linux','minimalist design','flexible design patterns'],
+            typeSpeed: 75,
+            startDelay: 9000,
+            loop:true,
+            shuffle:true
+          });
+        });
+      });        
+    </script>
   </body>
 </html>

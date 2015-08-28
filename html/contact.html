@@ -76,7 +76,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
@@ -84,23 +84,15 @@
     <!-- typed.js fun stuff -->
     <script src="../js/typed.js"></script>
     <script>
-    $(document).ready(function(){
-      $('.launchers').delay(2000).animate({'opacity': '1'}, 4000)
-      // var $launchers = $('<a href="https://www.linkedin.com/in/kylebakerjs"> <img src="../img/linkedin1.png" height="128" width="128"/> </a> <a  href="https://github.com/finetype"> <img src="../img/github1.png" height="128" width="128"/> </a>')
-      
-      // // $launchers
-      // $( "<p>Test</p>" )
-      // .appendTo(".inner cover").hide().fadeIn('slow');
-
-      $(function(){
+      $(document).ready(function(){
+        $('.launchers').delay(1250).animate({'opacity': '1'}, 4000)
+        $(function(){
           $(".cover-heading").typed({
-            strings: ["w h e r e^750 _ a m _ ^200i ?"],
+            strings: ["w h e r e^250 _ a m _ i ?"],
             typeSpeed: 10
           });
+        });
       });
-
-    });
-    
     </script>
   </body>
 </html>
