@@ -429,5 +429,4 @@
         resetCallback: function() {}
     };
 
-
 }(window.jQuery);
