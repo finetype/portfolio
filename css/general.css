@@ -11,6 +11,10 @@
     margin-top:24px;
 }
 
+.masthead-brand {
+    opacity:0;
+}
+
 .lead2 {
     font-size:21px;
 }

@@ -1,10 +1,15 @@
 to-do
 
-info page about makersquare/hackreactor
-transform into single page app
+!info page about makersquare/hackreactor
+!transform into single page app
+!blog...bleh
+!add portfolio page:
+  gifs of projects that link to themselves
+    see: http://imgur.com/WbyWAYW
+!bio page: banner fades into background, more info displayed
+
+add reference to codewars
 open links in new tabs?
 recommended reading page
 rename the sections?
 rewrite in mithril?
-
-blog...bleh
