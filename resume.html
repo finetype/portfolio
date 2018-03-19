@@ -24,7 +24,9 @@
     <![endif]-->
   </head>
   <body>
-    <img id="jumbo" class="img-responsive col-xs-12" src="img/cafe-crop-overlay.jpg"/>
+    <div style="display:flex;justify-content:center;align-items:center;width:100%;">
+      <img id="jumbo" style="opacity:1;" class="img-responsive col-xs-12" src="img/cafe-crop-overlay-v2.jpg"/>
+    </div>
     <div class="site-wrapper">
       <div class="cover-container">
         <div class="masthead clearfix">
@@ -33,10 +35,10 @@
           <div class="inner">
             <nav>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="contact">Contact</a></li>
                 <li><a href="bio">Bio</a></li>
-                <li><a href="resume.html"><i>Resume</i></a></li>
+                <li class="active"><a href="resume"><i>Resume</i></a></li>
                 <!-- <li><a href="http://www.ihazcodenow.blogspot.com">Blog</a></li> -->
               </ul>
             </nav>
@@ -44,8 +46,9 @@
         </div>
 
         <div class="inner cover">
-          <h1 class="cover-heading"></h1>
-          <p class="lead"></p>
+          <h1 class="cover-heading">_</h1>
+          <iframe class="resume-iframe" src="https://docs.google.com/document/d/e/2PACX-1vTE8BHgn_QjQfK640pV1p9Xc5EjiRlny4rKBC3YXf5Gfe-Kd7fBLzZFHwzBBAK4zyih-pFf2NdJVatJ/pub?embedded=true"></iframe>
+          <!-- <p class="lead"></p> -->
         </div>
 
         <div class="mastfoot">
@@ -68,23 +71,24 @@
     <!-- typing animation stuff. -->
     <script>
       $(document).ready(function(){
-        $(function(){
+
+        setTimeout(() => {
+          $('#jumbo').animate({'width': `${$('.cover-container').width()}px`}, 3000);
+        }, 500);
+
+        setTimeout(() => {
+          $(function(){
             $(".cover-heading").typed({
-              strings: ["k y l e^1000 _ b a k e r"],
-              typeSpeed: 45,
+              strings: ["r e s u m e_"],
+              typeSpeed: 15,
               startDelay: 1100
             });
-        });
-        $(function(){
-          $(".lead").typed({
-            strings: ['javascript coder','judoka','web developer','programmer','boulderer','logician','cellist','esperantist','node.js developer','TiNeSiFe','polyglot','linux user','austinite','writer','problem solver','biker','full stack developer', 'go player'],
-            typeSpeed: 75,
-            startDelay: 4300,
-            loop:true,
-            shuffle:true
           });
-        });
-        $('#jumbo').animate({'opacity': '1'}, 2500)
+
+          $('.resume-iframe').animate({'opacity':1}, 4000);
+          
+        }, 2000);
+
       });
     </script>
   </body>

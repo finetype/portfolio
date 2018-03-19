@@ -1,10 +1,10 @@
 var m = require("mithril")
 
-var Layout = require("./views/Layout")
+var HeaderNav = require("./views/HeaderNav")
 
 m.route(document.body, "/home", {
     "/home": {
-    	render: () => m(Layout/*, m(UserList)*/),
+    	render: () => m(HeaderNav/*, m(UserList)*/),
     },
     "/bio": {
     	render: () => {},
