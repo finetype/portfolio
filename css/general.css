@@ -1,6 +1,7 @@
 
 #jumbo {
-    padding-top:100px;
+    margin-top:100px;
+    padding-top:0px;
     padding-left:0px;
     padding-right:0px;
     -webkit-box-shadow: 0px 10px 100px rgba(0,0,0,.5);
@@ -189,7 +190,12 @@ body {
 .resume-iframe {
   width: 100%;
   height:400px;
+  display: none;
   opacity: 0;
+  -webkit-box-shadow: 0px 10px 100px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 10px 100px rgba(0,0,0,.5);
+  -o-box-shadow: 0 10px 100px rgba(0,0,0,.5);
+  box-shadow: 0 10 100px rgba(0,0,0,.5);
 }
 
 

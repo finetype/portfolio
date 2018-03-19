@@ -39,16 +39,15 @@
                 <li><a href="contact">Contact</a></li>
                 <li><a href="bio">Bio</a></li>
                 <li class="active"><a href="resume"><i>Resume</i></a></li>
-                <!-- <li><a href="http://www.ihazcodenow.blogspot.com">Blog</a></li> -->
               </ul>
             </nav>
           </div>
         </div>
 
-        <div class="inner cover">
-          <h1 class="cover-heading">_</h1>
+        <div style="padding:0px;" class="inner cover">
+          <h1 class="cover-heading"> </h1>
+          <p><a id="view-link" href="https://docs.google.com/document/d/1VGD-v1dK37bdWLdnlYyqnfrldYznp3wiem2SrshIHGU/edit?usp=sharing"></a>         <a id="download-link" href="https://docs.google.com/document/d/1VGD-v1dK37bdWLdnlYyqnfrldYznp3wiem2SrshIHGU/export?format=pdf"></a></p>
           <iframe class="resume-iframe" src="https://docs.google.com/document/d/e/2PACX-1vTE8BHgn_QjQfK640pV1p9Xc5EjiRlny4rKBC3YXf5Gfe-Kd7fBLzZFHwzBBAK4zyih-pFf2NdJVatJ/pub?embedded=true"></iframe>
-          <!-- <p class="lead"></p> -->
         </div>
 
         <div class="mastfoot">
@@ -58,35 +57,54 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+      // google doc just won't look good in a mobile browser. download pdf instead.      
+      if (window.innerWidth < 700) {
+          window.location.replace("https://docs.google.com/document/d/1VGD-v1dK37bdWLdnlYyqnfrldYznp3wiem2SrshIHGU/export?format=pdf");
+          window.download = true;
+      }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
     <!-- typed.js fun stuff -->
     <script src="js/typed.js"></script>
 
     <!-- typing animation stuff. -->
     <script>
       $(document).ready(function(){
-
         setTimeout(() => {
-          $('#jumbo').animate({'width': `${$('.cover-container').width()}px`}, 3000);
+          $('#jumbo').animate({'width': `${$('.cover-container').width()}px`}, 3500);
         }, 500);
 
-        setTimeout(() => {
-          $(function(){
-            $(".cover-heading").typed({
-              strings: ["r e s u m e_"],
-              typeSpeed: 15,
-              startDelay: 1100
-            });
+        $(function(){
+          $(".cover-heading").typed({
+            strings: ["r e s u m e_"],
+            typeSpeed: 15,
           });
 
-          $('.resume-iframe').animate({'opacity':1}, 4000);
-          
+          $("#view-link").typed({
+            strings: ["(view in google drive)"],
+            typeSpeed: 15,
+            startDelay: 2300
+          });
+
+          $("#download-link").typed({
+            strings: ["(download as pdf)"],
+            typeSpeed: 15,
+            startDelay: 3300
+          });
+        });
+
+        setTimeout(() => {
+          if (!window.download) {
+            setTimeout(() => {
+              $('.resume-iframe').css({'display':'block'});
+              $('.resume-iframe').animate({'opacity':1}, 4000);
+            }, 1500); // avoiding scrollbar
+          }
+          else {
+            // do not display
+          }
         }, 2000);
 
       });
