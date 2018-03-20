@@ -59,9 +59,9 @@
 
     <script>
       // google doc just won't look good in a mobile browser. download pdf instead.      
-      if (window.innerWidth < 700) {
+      if (window.innerWidth < 768) {
           window.location.replace("https://docs.google.com/document/d/1VGD-v1dK37bdWLdnlYyqnfrldYznp3wiem2SrshIHGU/export?format=pdf");
-          window.download = true;
+          window.download = true; // we use this below to decide not to render the page out. In the future, though, this decision should be made and prevent navigation here altogether.
       }
     </script>
     <script src="js/jquery.min.js"></script>
