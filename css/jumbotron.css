@@ -18,7 +18,7 @@
 user agent stylesheetdiv {
     display: block;
 }
-Inherited from 
+/*Inherited from */
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
@@ -26,7 +26,7 @@ body {
     color: #333;
     background-color: #fff;
 }
-Inherited from 
+/*Inherited from */
 html {
     font-size: 10px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -36,13 +36,13 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-Pseudo ::before element
+/*Pseudo ::before element*/
 :after, :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-Pseudo ::after element
+/*Pseudo ::after element*/
 :after, :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
